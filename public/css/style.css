@@ -1,0 +1,51 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/aos/dist/aos.css';
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import '../css/header.css';
+@import '../css/main.css';
+@import '../css/footer.css';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+*::selection{
+    background-color: #3932708e;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;   
+	background-image: url("#");
+    width: 100vw;
+    transition: .6s;
+    position: relative;
+}
+
+#centre
+{
+ background-color: #3932708e;
+ margin-top:200px; 
+}
+
+#image
+{
+ 	
+ margin-top:1px;	
+ width:100%;  
+ padding-left:30%;	
+}
+
+
+.monsterGreen{
+    position: absolute;
+    left: -5%;
+    height: 300px;
+    top: 110vh;
+    transform: rotate(40deg);
+    pointer-events: none;
+}

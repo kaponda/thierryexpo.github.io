@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>contact</title>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ6YJN7JTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KJ6YJN7JTC');
+</script>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    
+        
+       <nav class="navbar navbar-expand-lg navbar-dark mt-7 fixed-top" style="background-color:#7451eb;">
+            <div class="container-fluid px-5">
+			<a class="navbar-brand fs-1" href="about.html"><img class="img" src="../public/img/icone.png" alt="#" style="width:110px; height:90px; border-radius: 5px ;"/></a>
+               
+			   <span class="navbar-brand fs-1" href="../controller/controller_landing.php"> Tableau Recyclage</span>
+               <button class="navbar-toggler shadow-none text-white fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button> 
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active text-center fs-4 myLink" aria-current="page" href="../index.html ">Home</a>
+                        </li>
+
+						<li class="nav-item dropdown ">
+								   <a class="nav-link dropdown-toggle active text-center fs-4 myLink" aria-current="page" href="#" data-bs-toggle="dropdown"> Table</a>
+								<ul class="dropdown-menu">
+									  
+									  <li><a class="dropdown-item" href="small.html" > Small painting</a></li>
+									  <li><a class="dropdown-item" href="medium.html"> Medium painting</a></li>
+									  <li><a class="dropdown-item" href="large.html"> Large painting</a></li>
+									  
+                                 </ul>
+						</li>
+						
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    <div id="centre">
+            <div class="row text-white formContact">
+                <div class="col-lg-1"></div>
+                <div data-aos="fade-down-right" data-aos-duration="1500" class="mt-lg-5 col-lg-6 col-md-9 col-xs-11">
+                    <h2 class="text-white ms-5 underline title mt-5">Contact Us : </h2>
+
+                    <input id="name" class="form-control ms-lg-5 text-white shadow-none border-white bg-transparent rounded-pill mt-5" type="text" placeholder="Name" name="name" />
+
+                    <input id="email" class="form-control ms-lg-5 text-white shadow-none border-white bg-transparent rounded-pill mt-3" type="e-mail" placeholder="E-mail Address" name="email" />
+
+                    <input id="subject" class="form-control ms-lg-5 text-white shadow-none border-white bg-transparent rounded-pill mt-3" type="text" placeholder="Subject" name="subject"/>
+
+                    <textarea id="message" class="form-control ms-lg-5 text-white shadow-none border-white bg-transparent mt-3 myRounded" placeholder="Message" name="message" cols="30" rows="5"></textarea>
+                    <button onclick="sendMail()" class="btn text-white border-white btnHover rounded-pill fs-5 w-75 ms-lg-5 mt-4 shadow-none">send</button>
+                </div>
+                <div data-aos="fade-down-left" data-aos-duration="1500" class="col-lg-5 d-flex justify-content-center align-items-center mt-5">
+                    <img class="w-75 planet3" src="../vue/public/img/planet3.png" alt="">
+                </div>
+            </div>
+            
+        </div>       
+    
+     <?php include("templates/footer.php"); ?>
+    <script src="../public/js/main.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALT8gG4U5KRYeKbtAwxWLLf1QFJlz2z98&map_ids=2f67b456d0d3acc9&callback=initMap" async></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("IrZ3VfbCB-UtB2VZs");
+        })();
+    </script>
+	
+</body>
+
+</html>
